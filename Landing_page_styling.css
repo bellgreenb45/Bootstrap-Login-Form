@@ -1,0 +1,121 @@
+.jumbotron {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url("img/Screenshot\ 2025-01-29\ 174818.png") center center;
+    background-size: cover;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.col-md-9 {
+    margin: 0 auto;
+    padding: 0 15px;
+    width: 100vh;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.col-md-9 h1 {
+    font-size: 3rem !important; /* Increased font size */
+    margin-bottom: 20px;
+}
+
+.col-md-9 p {
+    font-size: 1.25rem !important; /* Ensure the font size is applied */
+}
+
+.logo {
+    position: absolute;
+    top: 20px; /* Adjust as needed */
+    left: 30px; /* Adjust as needed */
+    width: 200px; 
+    height: 200px;
+}
+
+/* Center and style featured content */
+.featured {
+    color: #0082ff;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.featured h1 {
+    font-size: 2.5rem; /* Increased font size */
+    margin-bottom: 15px;
+}
+
+.featured p {
+    font-size: 1.3rem; /* Increased font size */
+    font-weight: 630;
+}
+
+
+.featured .btn-default {
+    font-weight: bold;
+    color: white;
+    background-color: rgba(145, 82, 58, 0.7);
+    border-radius: 10px;
+    margin-top: 20px;
+    width: 300px;
+    padding: 15px 20px;
+}
+
+.featured .btn-default:hover {
+    background-color: rgb(145, 82, 58);
+}
+
+/* Center align elements in trial section and add padding */
+.trial {
+    text-align: center;
+    padding: 20px 0 40px 0;
+    color: black;
+}
+
+.trial img {
+    width: 200px;
+    height: 70px;
+    margin: 20px;
+}
+
+/* Footer styling */
+.footer {
+    background-color: #0082ff;
+    font-size: 15px;
+    padding: 10px 0;
+    color: white;
+    text-align: center;
+    position: fixed; /* Attach footer to the bottom */
+    bottom: 0;
+    width: 100%;
+}
+
+/* Add styling for devices between 480px and 768px */
+@media (min-width: 480px) {
+    .jumbotron {
+        height: 410px;
+        margin: 0;
+    }
+    .logo {
+        width: 40px; 
+        height: 40px;
+    }
+    .featured h1 {
+        padding-top: 10px;
+        font-size: 1.5rem; /* Adjust font size for smaller screens */
+    }
+    .featured p, .featured a {
+        font-size: 13px;
+    }
+    .featured {
+        text-align: center;
+    }
+    .trial img {
+        width: 250px;
+        height: 70px;
+        margin: 20px;
+    }
+}
